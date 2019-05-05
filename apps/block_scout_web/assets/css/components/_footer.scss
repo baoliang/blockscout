@@ -6,14 +6,20 @@ $footer-item-disc-color: $primary !default;
 $footer-social-icon-color: $footer-text-color !default;
 $footer-logo-height: 2rem !default;
 $footer-logo-width: auto !default;
-
+.copy {
+  line-height: 45px;
+}
+.logo-title {
+  font-size: 30px;
+  color: white;
+}
 .footer {
   background: $footer-background-color;
   color: $footer-text-color;
   font-size: 12px;
-  line-height: 1.67;
+  // line-height: 1.67;
   margin: 0;
-  padding: 40px 0;
+  padding: 5px 0;
   position: relative;
 
   @media (max-width: $breakpoint-md) {

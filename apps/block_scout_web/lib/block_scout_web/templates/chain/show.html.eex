@@ -2,8 +2,7 @@
   <div class="container">
     <div class="dashboard-banner">
       <!-- Graph and legend -->
-      <div class="dashboard-banner-network-graph">
-        <!-- Graph -->
+      <!-- <div class="dashboard-banner-network-graph">
         <div class="dashboard-banner-chart">
           <div data-chart-loading-message class="tile tile-muted text-center mt-5">
             <span class="loading-spinner-small mr-2">
@@ -17,7 +16,6 @@
           </button>
           <canvas data-chart="marketHistoryChart" data-market_history_chart_path="<%= @chart_data_path %>" width="350" height="152" style="display: none;"></canvas>
         </div>
-        <!-- Legend -->
         <div class="dashboard-banner-chart-legend">
           <div class="dashboard-banner-chart-legend-item">
             <span class="dashboard-banner-chart-legend-label">
@@ -34,7 +32,7 @@
             </span>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Stats -->
       <div class="dashboard-banner-network-plain-container">
         <div class="dashboard-banner-network-stats">

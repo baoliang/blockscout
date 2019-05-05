@@ -3,15 +3,15 @@ $dashboard-banner-gradient-end: lighten(
   $dashboard-banner-gradient-start,
   5%
 ) !default;
-$dashboard-banner-network-plain-container-background-color: lighten($dashboard-banner-gradient-end, 5%)!default;
+$dashboard-banner-network-plain-container-background-color: #4a42ce !default;
 $dashboard-line-color-price: lighten($dashboard-banner-gradient-end, 5%) !default;
 $dashboard-line-color-market: $secondary !default;
 $dashboard-stats-item-label-color: #fff !default;
-$dashboard-stats-item-value-color: rgba(#fff, 0.8) !default;
+$dashboard-stats-item-value-color: rgba(#fff, 1) !default;
 $dashboard-banner-chart-legend-label-color: #fff !default;
 $dashboard-banner-chart-legend-value-color: $dashboard-stats-item-value-color !default;
 $dashboard-stats-item-border-color: $primary !default;
-$dashboard-banner-network-plain-container-height: 205px;
+$dashboard-banner-network-plain-container-height: 108px;
 $dashboard-banner-chart-axis-font-color: $dashboard-stats-item-value-color !default;
 
 .dashboard-banner-container {
@@ -144,10 +144,10 @@ $dashboard-banner-chart-axis-font-color: $dashboard-stats-item-value-color !defa
   display: flex;
   height: $dashboard-banner-network-plain-container-height;
   justify-content: center;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 0px;
   max-width: 100%;
-  padding: 30px 0 30px 60px;
-  width: 750px;
+  padding: 0px 0 0px 0px;
+  // width: 750px;
 
   @include media-breakpoint-down(md) {
     border-top-right-radius: 10px;
@@ -180,5 +180,5 @@ $dashboard-banner-chart-axis-font-color: $dashboard-stats-item-value-color !defa
     grid-template-columns: 1fr 1fr;
   }
 
-  @include stats-item($dashboard-stats-item-border-color, $dashboard-stats-item-label-color, $dashboard-stats-item-value-color);
+  @include stats-item(#b9b2ef, $dashboard-stats-item-label-color, $dashboard-stats-item-value-color);
 }

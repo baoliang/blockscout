@@ -1,5 +1,6 @@
 <%= if assigns[:block] do %>
   <title>
+
     <%= gettext(
           "Block %{block_number} - %{subnetwork} Explorer",
           block_number: @block.number,
