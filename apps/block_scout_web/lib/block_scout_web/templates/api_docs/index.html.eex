@@ -6,11 +6,10 @@
       <small class="text-monospace text-primary" data-endpoint-url="https://blockscout.com/poa/core/api">[ <%= gettext "Base URL:" %> https://blockscout.com/poa/core/api ]</small>
       <p class="mt-4"><%= gettext "This API is provided for developers transitioning their applications from Etherscan to Explorer. It supports GET and POST requests." %></p>
 
+
     </div>
   </div>
-
   <%= for module <- @documentation do %>
     <%= render "_module_card.html", module: module %>
   <% end %>
-
 </section>

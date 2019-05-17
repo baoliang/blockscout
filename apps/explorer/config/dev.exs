@@ -2,7 +2,7 @@ use Mix.Config
 
 # Configure your database
 config :explorer, Explorer.Repo,
-  database: "explorer_dev",
+  database: "explorer_prd",
   hostname: "localhost",
   pool_size: 20,
   timeout: :timer.seconds(80)
@@ -22,7 +22,8 @@ import_config "dev.secret.exs"
 
 variant =
   if is_nil(System.get_env("ETHEREUM_JSONRPC_VARIANT")) do
-    "parity"
+
+    "geth"
   else
     System.get_env("ETHEREUM_JSONRPC_VARIANT")
     |> String.split(".")
