@@ -1,5 +1,7 @@
 <%= if assigns[:transaction] do %>
   <title>
+    <!-- Mainnet ATC chain Explorer -->
+
     <%= gettext(
           "Transaction %{transaction} - %{subnetwork} Explorer",
           transaction: to_string(@transaction.hash),
